@@ -48,14 +48,18 @@
 
             <hgroup>
                 <h1 class="header-title">Escola Técnica Estadual de Guaianases</h1>
-                <h3 class="header-title">Desenvolvimento de Sistemas</h3>
+                <h2 class="header-title">Desenvolvimento de Sistemas</h2>
             </hgroup>
         </header>
-        <main> 
-
-            <div class="teste">
-
-            </div>
+        <main>
+            <hr>
+            <section class="what-is">
+                <h3>&nbsp;&nbsp;O que é?</h3>
+                <p>&nbsp;O curso de desenvolvimento de sistemas da ETEC de Guaianases é um curso abrangente
+                    que envolve várias áreas da informática avançada pois foca no desenvolvimento de aplicações
+                    para a internet e smartphones, como sites ou aplicativos mobile por exemplo.
+                </p>
+            </section>
 
 
         </main>
@@ -66,5 +70,20 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var lastScrollTop = 0;
+            $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop || st === 0){
+                $('.navbar').slideUp("fast");
+            } else {
+                $('.navbar').slideDown("fast");
+            }
+            lastScrollTop = st;
+            });
+        </script>
     </body>
 </html>
