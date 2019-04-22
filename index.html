@@ -60,7 +60,7 @@
                     para a internet e smartphones, como sites ou aplicativos mobile por exemplo.
                 </p>
             </section>
-
+            <div id="teste"></div>
 
         </main>
         <footer>
@@ -77,10 +77,10 @@
             var lastScrollTop = 0;
             $(window).scroll(function(event){
             var st = $(this).scrollTop();
-            if (st > lastScrollTop || st === 0){
-                $('.navbar').slideUp("fast");
-            } else {
+            if (st < lastScrollTop || st === 0){
                 $('.navbar').slideDown("fast");
+            } else {
+                $('.navbar').slideUp("fast");
             }
             lastScrollTop = st;
             });
