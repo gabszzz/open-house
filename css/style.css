@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 body {
     font-family: 'Orbitron', sans-serif;
 }
 
-body {
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -21,6 +22,10 @@ body {
 .card {
     margin: 20% auto;
     width: 70%;
+}
+
+.card-title {
+    margin-bottom: 4%;
 }
 
 .util-space {
@@ -38,7 +43,7 @@ body {
 }
 
 .carousel {
-    margin-bottom: 6%;
+    margin-bottom: 4%;
 }
 
 .carousel-item {
@@ -70,4 +75,8 @@ hr {
 	border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
     margin-bottom: 10%;
+}
+
+.card-text {
+    font-family: 'Roboto Mono', monospace;
 }
