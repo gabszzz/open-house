@@ -37,10 +37,6 @@ body::-webkit-scrollbar {
     margin-bottom: 4%;
 }
 
-.util-space {
-    height: 5rem;
-}
-
 .navbar {
     width: 100%;
     position: fixed;
