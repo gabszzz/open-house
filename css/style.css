@@ -45,10 +45,6 @@ body::-webkit-scrollbar {
     margin-bottom: 2%;
 }
 
-.carousel-item {
-    height: 450px;
-}
-
 .navbar-brand {
     letter-spacing: 3ch;
     margin-left: 2%;
@@ -85,6 +81,27 @@ hr {
     letter-spacing: 10px;
 }
 
-.footer-title {
-    text-align: center;
+.footer {
+    background-color: #343A3F;
+    color: aliceblue;
+    letter-spacing: 2px;
+    padding: 30px 10px 10px 10px;
+    margin-top: 100px;
+}
+
+.footer div {
+    display: flex;
+}
+
+#back2top {
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    margin-top: 20px;
+}
+
+#developers {
+    margin-left: 5%;
 }
