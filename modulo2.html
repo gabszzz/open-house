@@ -102,8 +102,19 @@
             
         </main>
 
-        <footer>
-
+    <footer class="footer">
+            <div>
+                <a href="#header" id="back2top">
+                    <img src="img/cps.png" width="60" id="cps-image">
+                </a>
+                <p id="copyright"></p>
+                <p id="developers">
+                    Desenvolvedores: <a href="https://github.com/G4L1LE0/" target="_blank">Gabriel Teodoro</a>,
+                    <a href="https://github.com/AbdulAlhazred200p" target="_blank">João Nascimento</a>
+                    e <a href="https://github.com/t4b4t4F33h" target="_blank">Tabata Fernanda.</a>
+                
+                </p>
+            </div>
         </footer>
         <!-- Bootstrap Dependencies ---------------------------------------------------------------------->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -116,14 +127,18 @@
         <script type="text/javascript">
             var lastScrollTop = 0;
             $(window).scroll(function(event){
-            var st = $(this).scrollTop();
-            if (st < lastScrollTop || st === 0){
-                $('.navbar').slideDown("fast");
-            } else {
-                $('.navbar').slideUp("fast");
-            }
-            lastScrollTop = st;
+                var st = $(this).scrollTop();
+                
+                if (st < lastScrollTop || st === 0)
+                    $('.navbar').slideDown("fast");
+                else
+                    $('.navbar').slideUp("fast");
+                
+                lastScrollTop = st;
             });
+
+            var date = new Date();
+            document.getElementById("copyright").innerHTML = "&copy; " + date.getFullYear() + " ETEC de Guaianazes";
         </script>
     </body>
 </html> 
